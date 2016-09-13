@@ -8,6 +8,8 @@ ehthumbs.db
 # Homework File
 *.docx
 *.pdf
+*.rar
+*.zip
 
 # Folder config file
 Desktop.ini
