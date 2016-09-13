@@ -9,6 +9,6 @@ public class Homework5 {
         do {
             System.out.print(getFloor);
             getFloor++;
-        } while (liftFloor<=getFloor);
+        } while (getFloor>=liftFloor);
     }
 }
