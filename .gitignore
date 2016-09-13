@@ -2,6 +2,13 @@
 Thumbs.db
 ehthumbs.db
 
+# java compile file
+*.class
+
+# Homework File
+*.docx
+*.pdf
+
 # Folder config file
 Desktop.ini
 

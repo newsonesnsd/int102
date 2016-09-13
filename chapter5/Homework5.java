@@ -7,8 +7,8 @@ public class Homework5 {
         System.out.print("Enter Floor : ");
         int getFloor = input.nextInt();
         do {
-            System.out.print(getFloor);
-            getFloor++;
-        } while (getFloor>=liftFloor);
+            System.out.print(liftFloor);
+            liftFloor++;
+        } while (getFloor<=liftFloor);
     }
 }
