@@ -15,8 +15,6 @@ public class CheckInt {
         String typeOfInt = "";
         System.out.print("Enter your integer : ");
         Long getNum = input.nextLong();
-        System.out.println(shortMin);
-        System.out.println(shortMax);
         if (getNum >=longMin && getNum <= longMax) {
             typeOfInt += "long";
         }
