@@ -10,15 +10,15 @@ public class Homework5 {
         int secNum = Integer.parseInt(expression[1]);
         if (getExpression.contains("+")) {
             int sum = firstNum + secNum;
-            System.out.println("Anser : " + sum);
+            System.out.println("Answer : " + sum);
         }
         else if (getExpression.contains("-")) {
             int diff = firstNum - secNum;
-            System.out.println("Anser : " + diff);
+            System.out.println("Answer : " + diff);
         }
         else if (getExpression.contains("*")) {
             int product = firstNum * secNum;
-            System.out.println("Anser : " + product);
+            System.out.println("Answer : " + product);
         }
         else if (getExpression.contains("/")) {
             if (secNum == 0) {
