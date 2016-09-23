@@ -5,7 +5,7 @@
  */
 public class Homework3 {
 	public static void main(String[] args) {
-		System.out.println("Jirapong Rungsawang")
+		System.out.println("Jirapong Rungsawang");
 	}
 
 }
