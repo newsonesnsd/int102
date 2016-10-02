@@ -25,7 +25,7 @@ public class Homework5 {
                 System.out.println("Error !! can't divide by zero ");
             }
             else {
-                int div = firstNum  / secNum;
+                double div = (double) firstNum  / secNum;
                 System.out.println("Anser : " + div);
             }
         }
