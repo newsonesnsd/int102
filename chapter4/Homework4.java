@@ -10,7 +10,7 @@ public class Homework4 {
             String getType = input.nextLine();
             getType = getType.toLowerCase();
             int firstChar = (int) Character.toLowerCase(getName.charAt(0));
-            if (firstChar >= 97 && firstChar <= 122) {
+            if (firstChar >= 'a' && firstChar <= 'z') {
                 productStock = "AP";
                 if (getType.equals("toy")) {
                         productStock = productStock + "TOY11";
