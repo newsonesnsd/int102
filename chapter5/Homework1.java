@@ -2,9 +2,12 @@ import java.util.*;
 import java.text.*;
 public class Homework1 {
     public static void main(String[] args) {
+        DecimalFormat fm = new DecimalFormat("000000000");
         Scanner input = new Scanner(System.in);
         long lotteryNum = (int) (Math.random() * 10000000000L);
 
+        lotteryNum = Long.parseLong(fm.format(lotteryNum));
+        System.out.println(lotteryNum);
         System.out.print("Enter lottery : ");
         long getNum = input.nextLong();
         while (getNum != 0 ) {
