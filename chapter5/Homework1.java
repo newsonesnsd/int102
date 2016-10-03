@@ -1,9 +1,10 @@
 import java.util.*;
-
+import java.text.*;
 public class Homework1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         long lotteryNum = (int) (Math.random() * 10000000000L);
+
         System.out.print("Enter lottery : ");
         long getNum = input.nextLong();
         while (getNum != 0 ) {
