@@ -1,30 +1,40 @@
 import java.util.*;
-import java.text.*;
+
 public class Homework1 {
     public static void main(String[] args) {
-        DecimalFormat fm = new DecimalFormat("000000000");
         Scanner input = new Scanner(System.in);
-        long lotteryNum = (int) (Math.random() * 10000000000L);
+        int randomLotteryNum = (int) (Math.random() * 10);
+        String lotteryNum = "";
+        int i = 1;
 
-        lotteryNum = Long.parseLong(fm.format(lotteryNum));
-        System.out.println(lotteryNum);
+        while (i<=10) {
+            randomLotteryNum = (int) (Math.random() * 10);
+            lotteryNum += randomLotteryNum;
+            i++;
+        }
+        int numLength = lotteryNum.length();
+        System.out.println(lotteryNum + " nee");
+        // reward
+        String allDigit = lotteryNum;
+        String lastTwoDigit = lotteryNum.substring(numLength-2);
+        String lastThreeDigit = lotteryNum.substring(numLength-3);
         System.out.print("Enter lottery : ");
-        long getNum = input.nextLong();
-        while (getNum != 0 ) {
-            if (getNum == lotteryNum) {
-                System.out.println("1 st");
+        String getNum = input.nextLine();
+        while (getNum.equals("0") == false) {
+            if (getNum.equals(allDigit)) {
+                System.out.println("all digits!");
             }
-            else if (getNum == lotteryNum % 100) {
+            else if (getNum.substring(numLength-2).equals(lastTwoDigit)) {
                 System.out.println("last 2 num");
             }
-            else if (getNum == lotteryNum % 1000) {
+            else if (getNum.substring(numLength-3).equals(lastThreeDigit)) {
                 System.out.println("last 3 num");
             }
             else {
                 System.out.println("no reward");
             }
             System.out.print("Enter lottery : ");
-            getNum = input.nextLong();
+            getNum = input.nextLine();
         }
         System.out.println("Good Bye");
     }
