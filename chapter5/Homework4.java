@@ -2,7 +2,20 @@ import java.util.Scanner;
 
 public class Homework4 {
     public static void main(String[] args) {
-        int randomNum = (int) (Math.random()*900)+100; // n2 = 999, n1 = 100
-        System.out.println("Random num is : " + randomNum);
+        // Generate Number
+        int randomFirstNum = (int) (Math.random()*10);
+        int randomSecondNum = (int) (Math.random()*10);
+        while (randomFirstNum == randomSecondNum) {
+            randomSecondNum = (int) (Math.random()*10);
+        }
+        int randomThirdNum = (int) (Math.random()*10);
+        while (randomFirstNum == randomThirdNum) {
+            randomThirdNum = (int) (Math.random()*10);
+        }
+        int threeDigit = (randomFirstNum*100)+(randomSecondNum*10)+randomThirdNum;
+        System.out.println("Random is " + threeDigit);
+        int[] allRandomNum = allRandomNum = {randomFirstNum, randomSecondNum, randomThirdNum};
+        Arrays.sort(allRandomNum);
+        System.out.println(Arrays.asList(allRandomNum));
     }
 }
