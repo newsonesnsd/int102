@@ -11,7 +11,7 @@ public class Homework5 {
 			if(liftGo>=1 && liftGo<=5) {
 				System.out.print("Elevator ");
 				if (liftFloor <= liftGo) {
-					while(liftFloor <= liftGo) {
+					while(liftFloor < liftGo) {
 						System.out.print(liftFloor + ".. ");
 						liftFloor++;
 					}
