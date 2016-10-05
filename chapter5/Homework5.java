@@ -13,10 +13,10 @@ public class Homework5 {
 				if (liftFloor <= liftGo) {
 					while(liftFloor <= liftGo) {
 						System.out.print(liftFloor + ".. ");
-						++liftFloor;
+						liftFloor++;
 					}
 					System.out.println("");
-					System.out.println("Now " + liftFloor + " Floor");
+					System.out.println("Now " + (--liftFloor) + " Floor");
 				}
 				else {
 					while(liftFloor > liftGo) {
