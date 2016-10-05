@@ -38,6 +38,6 @@ public class Homework1 {
             System.out.print("Enter lottery : ");
             getNum = input.nextLine();
         }
-        System.out.println("Good Bye");
+        System.out.println("End Program");
     }
 }
