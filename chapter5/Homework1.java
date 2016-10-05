@@ -24,16 +24,16 @@ public class Homework1 {
         String getThreeDigit = getNum.substring(numLength-3);
         while (getNum.equals("0") == false) {
             if (getNum.equals(allDigit)) {
-                System.out.println("all digits!");
+                System.out.println("Reward all digits!");
             }
-            else if (getNum.substring(numLength-2).equals(lastTwoDigit)) {
-                System.out.println("last 2 num");
+            else if (getTwoDigit.equals(lastTwoDigit)) {
+                System.out.println("Reward the last 2 digits");
             }
-            else if (getNum.substring(numLength-3).equals(lastThreeDigit)) {
-                System.out.println("last 3 num");
+            else if (getThreeDigit.equals(lastThreeDigit)) {
+                System.out.println("Reward the last 3 digits");
             }
             else {
-                System.out.println("no reward");
+                System.out.println("No Reward");
             }
             System.out.print("Enter lottery : ");
             getNum = input.nextLine();
