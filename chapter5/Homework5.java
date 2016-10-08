@@ -11,19 +11,19 @@ public class Homework5 {
 			if(liftGo>=1 && liftGo<=5) {
 				System.out.print("Elevator ");
 				if (liftFloor <= liftGo) {
-					while(liftFloor <= liftGo) {
+					while(liftFloor < liftGo) {
 						System.out.print(liftFloor + ".. ");
 						liftFloor++;
 					}
-					System.out.println("");
-					System.out.println("Now " + (--liftFloor) + " Floor");
+					System.out.println(liftFloor);
+					System.out.println("Now " + liftFloor + " Floor");
 				}
 				else {
 					while(liftFloor > liftGo) {
 						System.out.print(liftFloor + ".. ");
 						liftFloor--;
 					}
-					System.out.print(liftFloor + ".. ");
+					System.out.println(liftFloor);
 					System.out.println("");
 					System.out.println("Now " + liftFloor + " Floor");
 				}

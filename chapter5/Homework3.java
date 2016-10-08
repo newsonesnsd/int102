@@ -5,6 +5,9 @@ public class Homework3 {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Num : ");
         int getNum = input.nextInt();
-        
+        while () {
+
+        }
+
     }
 }
