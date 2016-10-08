@@ -24,7 +24,6 @@ public class Homework5 {
 						liftFloor--;
 					}
 					System.out.println(liftFloor);
-					System.out.println("");
 					System.out.println("Now " + liftFloor + " Floor");
 				}
 			}
