@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Homework1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int randomLotteryNum = (int) (Math.random() * 10);
+        int randomLotteryNum;
         String lotteryNum = "";
         int i = 1;
         while (i<=10) {
@@ -12,7 +12,7 @@ public class Homework1 {
             i++;
         }
         int numLength = lotteryNum.length();
-        System.out.println(lotteryNum + " is reward");
+        //System.out.println(lotteryNum + " is reward");
         // reward
         String allDigit = lotteryNum;
         String lastTwoDigit = lotteryNum.substring(numLength-2);

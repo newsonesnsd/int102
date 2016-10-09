@@ -13,6 +13,7 @@ public class PrimeFactor {
                 getNum = getNum / i;
             }
         }
-        if (getNum < 1) System.out.println(getNum);
+        if 
+			(getNum < 1) System.out.println(getNum);
     }
 }
