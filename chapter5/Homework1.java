@@ -21,10 +21,10 @@ public class Homework1 {
                 if (getNum == randomLotteryNum) {
                     System.out.println("Reward all digits!");
                 }
-                else if (getNum == (randomLotteryNum % 1000)) {
+                else if ((getNum % 1000) == (randomLotteryNum % 1000)) {
                     System.out.println("Reward the last 3 digits");
                 }
-                else if (getNum == (randomLotteryNum % 100)) {
+                else if ((getNum % 100) == (randomLotteryNum % 100)) {
                     System.out.println("Reward the last 2 digits");
                 }
                 else {
