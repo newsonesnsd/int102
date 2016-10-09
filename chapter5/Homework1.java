@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Homework1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int randomLotteryNum;
+        long randomLotteryNum;
         String lotteryNum = "";
         int i = 1;
         while (i<=10) {
@@ -11,32 +11,31 @@ public class Homework1 {
             lotteryNum += randomLotteryNum;
             i++;
         }
-        int numLength = lotteryNum.length();
+        randomLotteryNum = Long.parseLong(lotteryNum);
         //System.out.println(lotteryNum + " is reward");
-        // reward
-        String allDigit = lotteryNum;
-        String lastTwoDigit = lotteryNum.substring(numLength-2);
-        String lastThreeDigit = lotteryNum.substring(numLength-3);
         System.out.print("Enter lottery : ");
-        String getNum = input.nextLine();
-        // Check input
-        String getTwoDigit = getNum.substring(numLength-2);
-        String getThreeDigit = getNum.substring(numLength-3);
-        while (getNum.equals("0") == false) {
-            if (getNum.equals(allDigit)) {
-                System.out.println("Reward all digits!");
-            }
-            else if (getTwoDigit.equals(lastTwoDigit)) {
-                System.out.println("Reward the last 2 digits");
-            }
-            else if (getThreeDigit.equals(lastThreeDigit)) {
-                System.out.println("Reward the last 3 digits");
+        long getNum = input.nextLong();
+        int checkDigit = String.valueOf(getNum).length();
+        while (getNum != 0) {
+            if (checkDigit == 10) {
+                if (getNum == randomLotteryNum) {
+                    System.out.println("Reward all digits!");
+                }
+                else if (getNum == randomLotteryNum % 100) {
+                    System.out.println("Reward the last 2 digits");
+                }
+                else if (getNum == randomLotteryNum % 1000) {
+                    System.out.println("Reward the last 3 digits");
+                }
+                else {
+                    System.out.println("No Reward");
+                }
             }
             else {
-                System.out.println("No Reward");
+                System.out.println("Please enter only 10 digits");
             }
             System.out.print("Enter lottery : ");
-            getNum = input.nextLine();
+            getNum = input.nextLong();
         }
         System.out.println("End Program");
     }
