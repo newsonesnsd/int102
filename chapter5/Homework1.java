@@ -12,7 +12,7 @@ public class Homework1 {
             i++;
         }
         randomLotteryNum = Long.parseLong(lotteryNum);
-        //System.out.println(lotteryNum + " is reward");
+        System.out.println(lotteryNum + " is reward (show only in result)");
         System.out.print("Enter lottery : ");
         long getNum = input.nextLong();
         int checkDigit = String.valueOf(getNum).length();
@@ -21,11 +21,11 @@ public class Homework1 {
                 if (getNum == randomLotteryNum) {
                     System.out.println("Reward all digits!");
                 }
-                else if (getNum == randomLotteryNum % 100) {
-                    System.out.println("Reward the last 2 digits");
-                }
-                else if (getNum == randomLotteryNum % 1000) {
+                else if (getNum == (randomLotteryNum % 1000)) {
                     System.out.println("Reward the last 3 digits");
+                }
+                else if (getNum == (randomLotteryNum % 100)) {
+                    System.out.println("Reward the last 2 digits");
                 }
                 else {
                     System.out.println("No Reward");
