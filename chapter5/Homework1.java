@@ -12,7 +12,7 @@ public class Homework1 {
             i++;
         }
         randomLotteryNum = Long.parseLong(lotteryNum);
-        System.out.println(lotteryNum + " is reward (show only in result)");
+        //System.out.println(lotteryNum + " is reward (show only in result)");
         System.out.print("Enter lottery : ");
         long getNum = input.nextLong();
         int checkDigit = String.valueOf(getNum).length();
