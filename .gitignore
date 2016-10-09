@@ -10,6 +10,7 @@ ehthumbs.db
 *.pdf
 *.rar
 *.zip
+*.txt
 
 # Folder config file
 Desktop.ini
