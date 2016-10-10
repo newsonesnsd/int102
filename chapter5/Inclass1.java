@@ -15,8 +15,8 @@ public class Inclass1 {
 		while (searchWord != -1) {
 			searchWord = getText.indexOf(getFindWord, count);
 			if (searchWord != -1) {
-				System.out.print(searchWord+1 + " ");
-				count +=searchWord+1;
+				System.out.print(++searchWord + " ");
+				count +=searchWord;
 			}	
 		}
 		
