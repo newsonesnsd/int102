@@ -22,8 +22,6 @@ public class Inclass2 {
 			}
 			System.out.print("\nEnter your sentence : ");
 			getText = input.nextLine();
-			if (getText.equalsIgnoreCase("exit"))
-				break;
 		}
 	}
 }
