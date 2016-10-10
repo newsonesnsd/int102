@@ -5,8 +5,8 @@ public class Inclass1 {
 		Scanner input = new Scanner(System.in);
 		int count = 0;
 		int searchWord = 0;
-		System.out.print("Enter your sentence : ");
 		String getText, getFindWord;
+		System.out.print("Enter your sentence : ");
 		getText = input.nextLine();
 		System.out.print("Enter find word : ");
 		getFindWord = input.nextLine();
