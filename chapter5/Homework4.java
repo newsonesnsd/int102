@@ -1,9 +1,9 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Homework4 {
     public static void main(String[] args) {
         // Generate Number
-        int randomFirstNum = (int) (Math.random()*10);
+        int randomFirstNum = (int) (Math.random()*9)+1;
         int randomSecondNum = (int) (Math.random()*10);
         while (randomFirstNum == randomSecondNum) {
             randomSecondNum = (int) (Math.random()*10);
@@ -14,7 +14,11 @@ public class Homework4 {
         }
         int threeDigit = (randomFirstNum*100)+(randomSecondNum*10)+randomThirdNum;
         System.out.println("Random is " + threeDigit);
+        System.out.printf("Sort num : " );
         int[] allRandomNum = {randomFirstNum, randomSecondNum, randomThirdNum};
-        System.out.println(Arrays.toString(allRandomNum));
+        Arrays.sort(allRandomNum);
+        for (int i = 0; i < 3; i++) {
+            System.out.print(allRandomNum[i]);
+        }
     }
 }
