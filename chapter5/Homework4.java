@@ -9,7 +9,7 @@ public class Homework4 {
             randomSecondNum = (int) (Math.random()*10);
         }
         int randomThirdNum = (int) (Math.random()*10);
-        while (randomFirstNum == randomThirdNum || randomThirdNum == randomSecondNum) {
+        while (randomThirdNum == randomFirstNumdNum || randomThirdNum == randomSecondNum) {
             randomThirdNum = (int) (Math.random()*10);
         }
         int threeDigit = (randomFirstNum*100)+(randomSecondNum*10)+randomThirdNum;
