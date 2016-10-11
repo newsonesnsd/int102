@@ -9,12 +9,12 @@ public class Homework4 {
             randomSecondNum = (int) (Math.random()*10);
         }
         int randomThirdNum = (int) (Math.random()*10);
-        while (randomFirstNum == randomThirdNum) {
+        while (randomFirstNum == randomThirdNum || randomThirdNum == randomSecondNum) {
             randomThirdNum = (int) (Math.random()*10);
         }
         int threeDigit = (randomFirstNum*100)+(randomSecondNum*10)+randomThirdNum;
         System.out.println("Random is " + threeDigit);
-        int[] allRandomNum = allRandomNum = {randomFirstNum, randomSecondNum, randomThirdNum};
+        int[] allRandomNum = {randomFirstNum, randomSecondNum, randomThirdNum};
         Arrays.sort(allRandomNum);
         System.out.println(Arrays.asList(allRandomNum));
     }
