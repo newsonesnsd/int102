@@ -12,13 +12,16 @@ public class Homework4 {
         while (randomThirdNum == randomFirstNum || randomThirdNum == randomSecondNum) {
             randomThirdNum = (int) (Math.random()*10);
         }
-        int threeDigit = (randomFirstNum*100)+(randomSecondNum*10)+randomThirdNum;
+        String threeDigit = randomFirstNum+""+randomSecondNum+randomThirdNum;
         System.out.println("Random is " + threeDigit);
-        System.out.printf("Sort num : " );
+        System.out.print("Sort num : " );
         int[] allRandomNum = {randomFirstNum, randomSecondNum, randomThirdNum};
         Arrays.sort(allRandomNum);
+        String sortedNum = "";
         for (int i = 0; i < 3; i++) {
             System.out.print(allRandomNum[i]);
+            sortedNum+=allRandomNum[i];
         }
+        System.out.println("\n"+sortedNum+".00");
     }
 }
