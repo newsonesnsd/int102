@@ -7,10 +7,11 @@ public class Homework6 {
         String textReader = readFile.readLine();
         String text = "";
         while (textReader != null) {
-            text += textReader+ "\n";
+            text += textReader + "\n";
             textReader = readFile.readLine();
         }
-        System.out.println("Textfile : "+ "\""+ text + "\"");
+        text = text.trim();
+        System.out.println("Textfile : " + text);
         int spaceCount = text.length() - text.replaceAll(" ", "").length();
         int wordCount = spaceCount + 1;
         System.out.println("Found : " + wordCount + " words");
