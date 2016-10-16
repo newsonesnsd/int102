@@ -8,6 +8,7 @@ public class Homework2 {
         int spaceCount = getText.length() - getText.replaceAll(" ", "").length();
         int wordCount = spaceCount + 1;
         System.out.println(wordCount + " words");
+        System.out.print("Reverse : ");
         String[] textInverse = getText.split(" ");
         for (int i = spaceCount; i >= 0; i--) {
             System.out.print(textInverse[i] + " ");
