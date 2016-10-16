@@ -6,14 +6,16 @@ public class Homework6 {
         BufferedReader readFile = new BufferedReader(fileInput);
         String textReader = readFile.readLine();
         String text = "";
+        int lineCount = 0;
         while (textReader != null) {
             text += textReader + "\n";
             textReader = readFile.readLine();
+            lineCount++;
         }
-        text = text.trim();
-        System.out.println("Textfile : " + text);
-        int spaceCount = text.length() - text.replaceAll(" ", "").length();
-        int wordCount = spaceCount + 1;
+        text = text.trim(); // Delete new line
+        System.out.println("Textfile : \n\"" + text + "\"");
+        int spaceCount = text.length() - text.replace(" ", "").length();
+        int wordCount = spaceCount + lineCount;
         System.out.println("Found : " + wordCount + " words");
     }
 }
