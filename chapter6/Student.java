@@ -19,7 +19,7 @@ public class Student {
         return "Your ID is : " + studentID;
     }
 
-    public void setStudentSec(long studentID){
+    public void setStudentSec(){
         if (studentID <= (studentID / 2)) {
             studentSec = "A";
         }
