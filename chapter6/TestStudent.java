@@ -13,8 +13,10 @@ public class TestStudent {
         System.out.println("ID : " + stdID);
         System.out.println(stdSec);
         System.out.println("Mail : " + stdMail);
+        System.out.println("Subject : " + subject);
         std1.drop(subject);
         String stdStatus = std1.status();
+        System.out.println("Status : " + stdStatus);
 
     }
 }
