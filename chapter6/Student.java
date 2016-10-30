@@ -39,8 +39,9 @@ public class Student {
         return studentID;
     }
 
-    public String studentSec() {
-        if (studentID <= (studentID / 2)) {
+    public String sec() {
+        int ran = (int) (Math.random()*2)+1;
+        if (ran == 1) {
             studentSec = "A";
         }
         else {
