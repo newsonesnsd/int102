@@ -34,7 +34,7 @@ public class Student {
         return subjectStatus;
     }
 
-    public long studentID() {
+    public long Id() {
         studentID = (long) (Math.random()*(59130500143L-59130500001L+1))+59130500001L;
         return studentID;
     }
@@ -47,7 +47,7 @@ public class Student {
         else {
             studentSec = "B";
         }
-        return "Your sec is : " + studentSec;
+        return "Section : " + studentSec;
     }
 
     public String mail() {
