@@ -29,7 +29,7 @@ public class Student {
             subjectStatus = learnSubject + " was dropped";
         }
         else {
-            subjectStatus = learnSubject + " now lerning";
+            subjectStatus = learnSubject + " now learning";
         }
         return subjectStatus;
     }
