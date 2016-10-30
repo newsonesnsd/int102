@@ -8,28 +8,7 @@ public class Student {
     }
 
     public String getStudentName() {
-        return studentName;
-    }
-
-    public void setStudentID() {
-        studentID = (long) (Math.random()*(59130500143L-59130500001L+1))+59130500001L;
-    }
-
-    public long getStudentID() {
-        return studentID;
-    }
-
-    public void setStudentSec(){
-        if (studentID <= (studentID / 2)) {
-            studentSec = "A";
-        }
-        else {
-            studentSec = "B";
-        }
-    }
-
-    public String getStudentSec() {
-        return "Your sec is : " + studentSec;
+        return "Name : " + studentName;
     }
 
     public void setSubject(String subject) {
@@ -45,7 +24,6 @@ public class Student {
         return subjectDrop;
     }
 
-
     public String status() {
         if (subjectDrop == true) {
             subjectStatus = learnSubject + " was dropped";
@@ -54,6 +32,25 @@ public class Student {
             subjectStatus = learnSubject + " now lerning";
         }
         return subjectStatus;
+    }
+
+    public long studentID() {
+        studentID = (long) (Math.random()*(59130500143L-59130500001L+1))+59130500001L;
+        return studentID;
+    }
+
+    public String studentSec() {
+        if (studentID <= (studentID / 2)) {
+            studentSec = "A";
+        }
+        else {
+            studentSec = "B";
+        }
+        return "Your sec is : " + studentSec;
+    }
+
+    public String mail() {
+        return studentID + "@mail.kmutt.ac.th";
     }
 
 }
