@@ -11,7 +11,7 @@ public class Student {
         return studentName;
     }
 
-    public void setStudentID(long id) {
+    public void setStudentID() {
         studentID = (long) (Math.random()*(59130500143L-59130500001L+1))+59130500001L;
     }
 
