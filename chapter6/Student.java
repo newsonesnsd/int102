@@ -16,7 +16,7 @@ public class Student {
     }
 
     public String getStudentID() {
-        return "Your ID is : " + studentID;
+        return studentID;
     }
 
     public void setStudentSec(){
